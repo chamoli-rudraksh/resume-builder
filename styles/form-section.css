@@ -1,0 +1,121 @@
+.form-section {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left:10px;
+}
+
+
+
+
+body {
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.form-section p {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #bdadad;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+.form-section label {
+  color: #333333;
+  font-weight: 500;
+  margin-top:50px;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section input[type="month"],
+.form-section textarea {
+  border: 1px solid #cccccc;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #111111;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  
+}
+
+.form-section input:focus,
+.form-section textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.date-location-fields label {
+    display: inline-block;
+    margin-top: 5px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.form-section button{
+    border:none;
+    background-color: #7f8c8d;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 16px;
+}
+.form-section button:hover {
+  background-color: #636e72;
+  cursor: pointer;
+}
+
+
+
+.form-section select {
+  border: 1px solid #cccccc;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #333333;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  font-size: 0.85rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+select:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: none;
+}
+
+.delete-btn {
+  margin-left: 10px;
+  background: transparent;
+  border: none;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+.item-list li {
+  display: inline-block;
+  background-color: #f0f0f0;
+  padding: 4px 8px;
+  margin: 4px;
+  border-radius: 4px;
+  position: relative;
+  font-size: 14px;
+}
+
+.item-list .delete-btn {
+  background: none;
+  border: none;
+  color: #d00;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+}
