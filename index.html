@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles/form-section.css">
+    <link rel="stylesheet" href="styles/preview-section.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="resume-container">
+      <div class="form-section">
+        <div class="form-personal-info">
+          <p>Personal Details</p>
+          <label class="name">Full Name: <input type="text" placeholder="Enter your first and last name" id="input-name" /></label><br />
+          <label>Email: <input type="email" placeholder="Enter email" id="input-email" /></label>
+          <label>Phone: <input type="text" placeholder="Enter Phone" id="input-phone" /></label><br />
+          <label>LinkedIn : <input type="text" placeholder="Enter LinkedIn" id="input-linkedin" /></label><br />
+        </div>
+
+        <div class="form-summary">
+          <p>Summary</p>
+          <label>
+            <textarea id="input-summary" placeholder="Write a short summary about yourself"></textarea>
+          </label>
+        </div>
+
+        <div class="form-education">
+          <p>Education</p>
+          <label>Degree: <input type="text" placeholder="Enter degree" id="input-degree" /></label><br />
+          <label>School: <input type="text" placeholder="Enter school / university" id="input-school" /></label>
+          <div class="date-location-fields">
+            <label>Start Date <br /><input type="month" id="input-start-date" /></label>
+            <label>End Date <br /><input type="month" id="input-end-date" /></label>
+          </div>
+        </div>
+
+        <div class="form-skills">
+          <p>Skills</p>
+          <div class="add-skills">
+            <label>Skill: <input type="text" placeholder="Enter skill" id="input-skills" /></label><br />
+          </div><br />
+          <p class="item-skills-list"></p>
+          <button class="js-add-skills">Add Skill</button>
+        </div>
+
+        <div class="form-interest">
+          <p>Interests</p>
+          <input type="text" placeholder="Enter interest" id="input-interests" />
+          <p class="item-interests-list"></p>
+          <button class="js-add-interests">Add Interest</button>
+        </div>
+
+        <div class="form-project">
+          <p>Projects</p>
+          <div class="project-list">
+            <div class="project-item">
+              <label>Project Name: <input type="text" id="input-project-name" /></label><br />
+              <label>Description: <input type="text" id="input-project-description" /></label><br />
+            </div>
+          </div>
+          <button type="button" class="add-project-button">Add Project</button>
+        </div>
+      </div>
+
+      <div class="preview-section-wrapper">
+        <div class="preview-section">
+          <div class="preview-header">
+            <h1 id="preview-name">Your Name</h1>
+            <div class="contact-details">
+              <div><i class="fas fa-envelope"></i> <span id="preview-email">your@email.com</span></div>
+              <div><i class="fas fa-phone"></i> <span id="preview-phone">0123456789</span></div>
+              <div><i class="fab fa-linkedin"></i> <span id="preview-linkedin">linkedin.com/in/yourprofile</span></div>
+            </div>
+          </div>
+
+          <div class="preview-main">
+            <div class="preview-left">
+              <section class="preview-summary">
+                <h2>Summary</h2>
+                <p id="preview-summary">Your summary will appear here.</p>
+              </section>
+
+              <section class="preview-education">
+                <h2>Education</h2>
+                <span id="preview-degree">Your Degree</span><span>,</span>
+                <p id="preview-school">Your School / University</p>
+              </section>
+
+              <section class="preview-skills">
+                <h2>Skills</h2>
+                <ul id="preview-skills-list" ></ul>
+              </section>
+
+              <section class="preview-interests">
+                <h2>Interests</h2>
+                <ul id="preview-interests-list" ></ul>
+              </section>
+            </div>
+
+            <div class="preview-right">
+              <section class="preview-projects">
+                <h2>Projects</h2>
+                <div class="project">
+                  <h3 id="preview-project-name">Project Name</h3>
+                  <p id="preview-project-description">Project Description.</p>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/form-to-preview.js"></script>
+  </body>
+</html>
